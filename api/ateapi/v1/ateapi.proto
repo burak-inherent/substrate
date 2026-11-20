@@ -1296,8 +1296,7 @@ message SnapshotConfig {
   // It is a best-effort ceiling, not a guarantee: the system never packages
   // more than this level, and it may package less when a layer cannot be
   // captured or is too expensive to capture at the time, for example memory
-  // under host pressure. A process resumed in place on its worker keeps its
-  // memory regardless of this setting. Defaults to MEMORY when unset.
+  // under host pressure. Defaults to MEMORY when unset.
   //
   // +k8s:required
   // +k8s:minimum=1

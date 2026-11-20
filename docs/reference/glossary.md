@@ -153,7 +153,7 @@ for etcd.
   the snapshot uploaded to snapshot storage. It is best
   effort: the system never packages more than that level, and may package
   less when a layer cannot be captured or is too expensive to capture at
-  the time. A process resumed in place keeps its memory regardless.
+  the time.
 
 - **Golden Snapshot**: the initial checkpoint normally captured once, when an
   `ActorTemplate` is created, from a temporary "golden" boot of the workload.
